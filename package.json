@@ -1,0 +1,75 @@
+{
+  "name": "biojs-vis-blast",
+  "description": "Visualisation of BLAST results",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xwatkins/biojs-vis-blast",
+  "author": {
+    "name": "Xavier Watkins",
+    "email": "xwatkins@ebi.ac.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xwatkins/biojs-vis-blast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xwatkins/biojs-vis-blast/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2",
+      "url": "https://github.com/xwatkins/biojs-vis-blast/blob/master/LICENSE"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp",
+    "build": "gulp build",
+    "build-browser": "gulp build-browser",
+    "build-browser-min": "gulp build-browser-gzip",
+    "prepublish": "gulp",
+    "sniper": "biojs-sniper .",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "biojs-io-blast": "0.0.4",
+    "d3": "^3.4.13"
+  },
+  "devDependencies": {
+    "biojs-sniper": "^0.0.4",
+    "browserify": "5.x",
+    "chai": "^1.9.1",
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-chmod": "^1.1.1",
+    "gulp-gzip": "0.0.8",
+    "gulp-mocha": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-streamify": "^0.0.5",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "gulp-watch": "^1.0.2",
+    "mkdirp": "^0.5.0",
+    "mocha": "~1.20.1",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^1.0.6"
+  },
+  "shields": {
+    "test": {
+      "img": "https://travis-ci.org/xwatkins/biojs-vis-blast.svg?branch=master",
+      "href": "https://travis-ci.org/xwatkins/biojs-vis-blast"
+    }
+  },
+  "sniper": {
+    "js": [
+      "/build/biojsvisblast.js"
+    ],
+    "snippets": [
+      "snippets"
+    ],
+    "first": "simple_example"
+  },
+  "keywords": [
+    "biojs",
+    "biojs"
+  ]
+}
