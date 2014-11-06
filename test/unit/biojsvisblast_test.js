@@ -9,6 +9,8 @@
 // chai is an assertion library
 var chai = require('chai');
 
+var nock = require('nock');
+
 // @see http://chaijs.com/api/assert/
 var assert = chai.assert;
 
