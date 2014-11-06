@@ -68,10 +68,10 @@
     "snippets": [
       "snippets"
     ],
-    "first": "simple_example"
+    "first": "simple_example",
+    "exposed": ["biojs-io-blast"]
   },
   "keywords": [
-    "biojs",
     "biojs"
   ]
 }
