@@ -36,7 +36,7 @@
     "d3": "^3.4.13"
   },
   "devDependencies": {
-    "biojs-sniper": "^0.0.4",
+    "biojs-sniper": "0.0.7",
     "browserify": "5.x",
     "chai": "^1.9.1",
     "del": "^0.1.3",
@@ -69,7 +69,9 @@
       "snippets"
     ],
     "first": "simple_example",
-    "exposed": ["biojs-io-blast"]
+    "exposed": [
+      "biojs-io-blast"
+    ]
   },
   "keywords": [
     "biojs"
