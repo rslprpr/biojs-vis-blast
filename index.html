@@ -1,15 +1,37 @@
-<html>
-<body>
-	<div id=yourDiv>
-		<script type="text/javascript" charset="utf-8" src="./build/biojsvisblast.js"></script>
-<script type="text/javascript" charset="utf-8">
-// if you don't specify a html file, the sniper will generate a div
-var app = require("biojs-vis-blast");
-var blast = require('biojs-io-blast');
-blast.read('blast_results_ebi.xml', function(jsonData){
-	var instance = new app({el: yourDiv, model: jsonData});
-	instance.render();
-});
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico">
+
+    <link type="text/css" rel="stylesheet" href="/lib/style.css">
+
+    <link type="text/css" rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+
+
+    <script src="/build/biojsvisblast.js"></script>
+
+    <script src="/d3.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+</head>
+<div id='8h4utocg14i'></div>
+<script>
+    (function() {
+        var yourDiv = document.getElementById('8h4utocg14i');
+        // if you don't specify a html file, the sniper will generate a div
+        var app = require("biojs-vis-blast");
+        var blast = require('biojs-io-blast');
+        blast.read('../blast_results_ebi.xml', function(jsonData) {
+            var instance = new app({
+                el: yourDiv,
+                model: jsonData
+            });
+            instance.render();
+        });
+    })();
 </script>
-</body>
-</html>
