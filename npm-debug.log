@@ -1,0 +1,31 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info prewatch biojs-vis-blast@0.1.0
+6 info watch biojs-vis-blast@0.1.0
+7 verbose unsafe-perm in lifecycle true
+8 info biojs-vis-blast@0.1.0 Failed to exec watch script
+9 error biojs-vis-blast@0.1.0 watch: `watchify -v -r ./lib/biojsvisblast:biojs-vis-blast -r biojs-io-blast -o build/biojsvisblast.js -d`
+9 error spawn ENOENT
+10 error Failed at the biojs-vis-blast@0.1.0 watch script.
+10 error This is most likely a problem with the biojs-vis-blast package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     watchify -v -r ./lib/biojsvisblast:biojs-vis-blast -r biojs-io-blast -o build/biojsvisblast.js -d
+10 error You can get their info via:
+10 error     npm owner ls biojs-vis-blast
+10 error There is likely additional logging output above.
+11 error System Windows_NT 6.1.7601
+12 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+13 error cwd C:\users\Homa\Documents\biojs-vis-blast
+14 error node -v v0.10.33
+15 error npm -v 1.4.28
+16 error syscall spawn
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 verbose exit [ 1, true ]
