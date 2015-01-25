@@ -10,8 +10,8 @@ git clone https://github.com/rslprpr/biojs-vis-blast.git <br>
 cd biojs-vis-blast <br>
 npm install<br>
 ./w <br>
-npm run watch
-npm run snipper'
+npm run watch<br>
+npm run snipper <br>
 </code>
 
 Start using the component :http://localhost:9090/snippets
